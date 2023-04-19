@@ -1,0 +1,147 @@
+
+*,
+*::after{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    font-family: sans-serif;
+}
+header{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    color:rgb(168, 181, 116);
+    text-align: left;
+    font-size: x-large;
+}
+
+.cartbox{
+    width:20%;
+    position: absolute;
+    left:70%;
+    top: 10px;
+    padding: 10px 20px;
+}
+h2{
+    font-size: large;
+    padding:20px 15px;
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+    width:24vw;
+}
+.subtotal{
+    text-align: right;
+    padding:10%;
+}
+.checkout, .viewcart{
+    width:50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(42, 77, 165);
+    font-size: large;
+    color: #fff;
+    margin:10px auto;
+    padding:10px 15px
+}
+.viewcart{
+    background-color: #fff;
+    border: 2px solid rgb(42, 77, 165);
+    color: brown;
+}
+.carticon{
+    text-align: right;
+}
+
+.cart-item {
+    display:grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    padding:3% 2%;
+}
+.cart-item img{
+    width:100%;
+}
+
+.cart-item .details{
+    padding-left:20%;
+}
+.cart-item h3{
+    text-align: left; 
+    margin-bottom:20%; 
+}
+
+.cart-item .price{
+    display: block;
+    text-align: right;
+    margin-top: 25%; 
+}
+.quantity{
+    display: block;
+    margin-top:20%;
+} 
+.cancel{
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.cardwrap {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item img {
+    width:20%;
+}
+.card-item .details{
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span{
+    display: block;
+    margin-top:10px;
+}
+
+.addtocart-btn{
+    width: fit-content;
+    margin:auto;
+    padding: 3px 5px;
+    cursor: pointer;
+    background-color: rgb(168, 181, 116);
+    border-radius: 5px;
+    font-size: medium;
+    color:#fff
+}
+
